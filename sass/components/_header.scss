@@ -8,7 +8,6 @@
 
 .navigation {
   display: flex;
-  justify-content: space-between;
 }
 
 .menu {
@@ -50,6 +49,7 @@
 .contact {
   display: flex;
   gap: 30px;
+  margin-left: auto;
 }
 
 .contacts__link {
