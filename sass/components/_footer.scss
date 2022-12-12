@@ -1,0 +1,37 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--footer-background-color);
+  &__container {
+    display: flex;
+  }
+
+  &-info:first-child {
+    margin-right: 70px;
+  }
+
+  &-address {
+    margin-bottom: 9px;
+    color: var(--accent-whit-color);
+    font-style: normal;
+    @include font(null, null, 1.71, 0.03em);
+    display: block;
+  }
+
+  &-contacts {
+    display: block;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    @include font(null, null, 1.71, 0.03em);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--brend-color);
+    }
+  }
+
+  &-info {
+    margin-right: 93px;
+  }
+}

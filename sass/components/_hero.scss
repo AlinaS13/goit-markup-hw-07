@@ -1,0 +1,32 @@
+.hero {
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/main-image.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: #2f303a;
+
+  &__title {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    color: var(--accent-whit-color);
+    @include font(900, 44px, 1.36, 0.06em);
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 696px;
+  }
+
+  &__btn {
+    min-width: 216px;
+    height: 50px;
+  }
+  &__btn:hover,
+  &__btn:active {
+    background-color: #188ce8;
+  }
+}
